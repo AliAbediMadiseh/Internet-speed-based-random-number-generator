@@ -1,0 +1,13 @@
+import speedtest
+
+st = speedtest.Speedtest()
+u1 = st.upload()
+u1 = str(u1)
+u1 = u1.replace("." , "")
+u1 = int(u1)
+u1 = u1 ** 2
+u1 = str(u1)
+seed16_1 = u1[7:23]
+seed32_1 = u1[7:39]
+print("seed16_1 = ",seed16_1)
+print("seed32_1",seed32_1)
