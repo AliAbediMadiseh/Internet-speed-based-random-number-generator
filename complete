@@ -1,0 +1,60 @@
+import speedtest
+from datetime import datetime
+start_time = datetime.now()
+
+
+st = speedtest.Speedtest()
+d1 = st.download()
+d2 = st.download()
+d3 = st.download()
+u1 = st.upload()
+u2 = st.upload()
+u3 = st.upload()
+
+
+d1 = str(d1)
+d2 = str(d2)
+d3 = str(d3)
+u1 = str(u1)
+u2 = str(u2)
+u3 = str(u3)
+
+
+d1 = d1.replace("." , "")
+d2 = d2.replace("." , "")
+d3 = d3.replace("." , "")
+u1 = u1.replace("." , "")
+u2 = u2.replace("." , "")
+u3 = u3.replace("." , "")
+
+d1 = int(d1)
+d2 = int(d2)
+d3 = int(d3)
+u1 = int(u1)
+u2 = int(u2)
+u3 = int(u3)
+
+d1 = d1 ** 2
+d2 = d2 ** 2
+d3 = d3 ** 2
+u1 = u1 ** 2
+u2 = u2 ** 2
+u3 = u3 ** 2
+
+dt = d1 + d2 + d3
+ut = u1 + u2 + u3
+
+seed16_1 = ut[7:23]
+seed16_2 = dt[7:23]
+
+print("seed16_1 = ",seed16_1)
+print("seed16_2 = ",seed16_2)
+
+seed32_1 = ut[7:39]
+seed32_2 = dt[7:39]
+
+print("seed32_1",seed32_1)
+print("seed32_2",seed32_2)
+
+end_time = datetime.now()
+print('Duration: {}'.format(end_time - start_time))
