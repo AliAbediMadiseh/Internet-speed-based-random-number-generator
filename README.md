@@ -1,4 +1,4 @@
-# random_seed_generator_1
+# internet speed based random seed generator
 python algorithm for generate new random seed 1 
 creator: Ali Abedi Madiseh : aam7596@gmail.com
 Note:
