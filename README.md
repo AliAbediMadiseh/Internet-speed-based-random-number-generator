@@ -1,4 +1,4 @@
-# internet speed based random seed generator
+# internet speed based random number generator
 python algorithm for generate new random number 1 
 creator: Ali Abedi Madiseh : aam7596@gmail.com
 Note:
